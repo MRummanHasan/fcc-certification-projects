@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>freeCodeCamp project 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+body{ margin:25px auto;color: darkslategray }
+label{
+  color:thistle;
+}
+h1{
+  color: black;
+}
+.container{
+    background-color: crimson;
+    width: 60%;
+}
+</style>
+<body>
+
+  <div class="container">
+    <h1 id="title">Survey Form - Project FCC</h1>
+  
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+  
+    <form action="" id="survey-form">
+      <div class="form-group">
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" pattern="[^ @]*@[^ @]*" required>
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" class="form-control" id="number" placeholder="Enter number" name="number" min="0" max="99999">
+      </div>
+      <label>Which option best describes your current role?    </label>
+      <select class="form-control" id="dropdown">
+    <option value="volvo">Student</option>
+    <option value="saab">Professional</option>
+    <option value="mercedes">Other</option>
+  </select>
+      
+      <label> Gender: </label>
+      <br>
+      <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Prefer not to say
+       <br>
+      <label>Things that should be improved in the future
+  (Check all that apply):  
+  </label>
+      <br>
+      <input type="checkbox" name="vehicle" value="Bike"> Projects<br>
+    <input type="checkbox" name="vehicle" value="Car" checked> Problem sets<br>
+   
+      <label>Suggestions:</label>
+  <textarea rows="4" cols="50" class="form-control">
+  Enter any suggestions...
+  </textarea>
+      <br>
+      
+      
+  
+      <button type="submit" id="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
